@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="GuideRow" extends="Group">
+  <interface>
+    <field id="rowData" type="assocarray" onChange="layout" />
+    <field id="focused" type="boolean" value="false" onChange="layout" />
+  </interface>
+  <script type="text/brightscript" uri="pkg:/components/GuideRow.brs" />
+  <children>
+    <Rectangle id="bg" translation="[0,0]" width="560" height="160" color="0xFFC3002E" visible="false" />
+    <Rectangle id="bar" translation="[0,0]" width="4" height="160" color="0xFFC300FF" visible="false" />
+    <Label id="hdr" translation="[14,0]" width="520" height="34" vertAlign="center" color="0xFFC300FF" visible="false" />
+    <Label id="time" translation="[14,7]" width="84" height="28" vertAlign="center" />
+    <Rectangle id="nowBg" translation="[102,9]" width="76" height="24" color="0x0A8A00FF" visible="false">
+      <Label id="nowLbl" translation="[0,0]" width="76" height="24" horizAlign="center" vertAlign="center" text="AGORA" color="0xFFFFFFFF" />
+    </Rectangle>
+    <Label id="title" translation="[102,7]" width="450" height="28" vertAlign="center" color="0xFFFFFFFF" />
+    <Poster id="thumb" translation="[102,42]" width="150" height="84" loadDisplayMode="scaleToZoom" visible="false" />
+    <Label id="desc" translation="[264,42]" width="288" height="56" wrap="true" maxLines="2" color="0xFFFFFFEE" visible="false" />
+    <Label id="meta" translation="[264,100]" width="288" height="58" wrap="true" maxLines="2" color="0xFFFFFFA0" visible="false" />
+  </children>
+</component>

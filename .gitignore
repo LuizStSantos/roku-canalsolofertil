@@ -1,0 +1,6 @@
+*.zip
+*.pkg
+out/
+# NUNCA versionar a chave de desenvolvedor da Roku nem a senha
+*.key
+devid*

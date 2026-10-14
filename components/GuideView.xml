@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="GuideView" extends="Group">
+  <interface>
+    <field id="rows" type="array" onChange="onRows" alwaysNotify="true" />
+    <field id="subtitle" type="string" onChange="onSub" />
+    <field id="closeRequested" type="boolean" alwaysNotify="true" />
+    <field id="togglePause" type="boolean" alwaysNotify="true" />
+    <function name="handleKey" />
+  </interface>
+  <script type="text/brightscript" uri="pkg:/components/GuideView.brs" />
+  <children>
+    <Rectangle translation="[660,0]" width="620" height="720" color="0x060C08F2" />
+    <Rectangle translation="[660,0]" width="1" height="720" color="0xFFC30040" />
+    <Poster translation="[684,30]" width="54" height="54" loadDisplayMode="scaleToFit" uri="pkg:/images/logo.png" />
+    <Label id="gTitle" translation="[754,26]" width="400" height="34" vertAlign="center" text="Programação" color="0xFFFFFFFF" />
+    <Label id="gSub" translation="[754,64]" width="500" height="30" vertAlign="center" color="0xFFFFFF99" />
+    <Group id="list" translation="[684,106]" />
+    <Poster translation="[684,656]" width="46" height="24" uri="pkg:/images/key_updown.png" />
+    <Label id="f1" translation="[738,654]" width="150" height="28" height="24" vertAlign="center" text="Navegar" color="0xFFFFFF99" />
+    <Poster translation="[890,656]" width="46" height="24" uri="pkg:/images/key_back.png" />
+    <Label id="f2" translation="[944,654]" width="150" height="28" height="24" vertAlign="center" text="Fechar" color="0xFFFFFF99" />
+  </children>
+</component>
